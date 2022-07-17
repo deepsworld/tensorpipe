@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+tensorpipe.egg-info/PKG-INFO
+tensorpipe.egg-info/SOURCES.txt
+tensorpipe.egg-info/dependency_links.txt
+tensorpipe.egg-info/not-zip-safe
+tensorpipe.egg-info/top_level.txt

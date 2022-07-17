@@ -33,10 +33,10 @@ class CMakeBuild(build_ext):
             f"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY={output_path}",
             f"-DPYTHON_EXECUTABLE={sys.executable}",
             f"-DCMAKE_BUILD_TYPE={build_type}",
-            "-DCMAKE_C_COMPILER=clang-6.0",
-            "-DCMAKE_CXX_COMPILER=clang++-6.0",
             "-DCMAKE_POSITION_INDEPENDENT_CODE=true",
             "-DTP_BUILD_PYTHON=true",
+            "-DTP_BUILD_LIBUV=true",
+            "-DTP_USE_CUDA=true",
         ]
 
         for opt in os.environ:

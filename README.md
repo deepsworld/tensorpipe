@@ -22,6 +22,13 @@ $ cmake ../ -GNinja
 $ ninja
 ```
 
+``` shell
+conda install -c conda-forge cudatoolkit-dev=11.3
+conda install -c conda-forge pybind11 
+conda install -c conda-forge cmake ninja gxx
+pip install -v -e .
+```
+
 You can find test executables in `build/tensorpipe/test`.
 
 ## Interface
