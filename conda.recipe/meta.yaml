@@ -4,12 +4,12 @@ package:
 
 source:
   # TODO: change to official repo once merged
-  git_rev: 4a9c3540b028fb2d58f07194d36763445e7e25f8
+  git_rev: 94eb61a79459ab68740073432bc620b5176b3fa7
   git_url: https://github.com/deepsworld/tensorpipe.git
 
 build:
   number: 0
-  script: "pip install -v ."	
+  script: python setup.py install	
 
 requirements:
   build:
@@ -17,10 +17,10 @@ requirements:
     - cmake
     - git
     - gxx
-    - conda-forge::pybind11
   host:
     - conda-forge::cudatoolkit-dev=11.3
     - pip 
+    - conda-forge::pybind11
     - python=3.9
   run:
     - pytorch::cudatoolkit=11.3
