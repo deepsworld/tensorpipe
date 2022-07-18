@@ -4,7 +4,7 @@ package:
 
 source:
   # TODO: change to official repo once merged
-  git_rev: 94eb61a79459ab68740073432bc620b5176b3fa7
+  # git_rev: 94eb61a79459ab68740073432bc620b5176b3fa7
   git_url: https://github.com/deepsworld/tensorpipe.git
 
 build:
