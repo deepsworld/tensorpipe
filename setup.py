@@ -30,7 +30,7 @@ class CMakeBuild(build_ext):
         cmake_cmd = [
             "cmake",
             f"{source_path}",
-            f"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY={output_path}",
+            # f"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY={output_path}",
             f"-DPYTHON_EXECUTABLE={sys.executable}",
             f"-DCMAKE_BUILD_TYPE={build_type}",
             "-DCMAKE_POSITION_INDEPENDENT_CODE=true",
